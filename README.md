@@ -35,9 +35,16 @@ Formatos de data aceitos na importação incluem `dd/MM/yyyy`, `dd/MM/yy` e `yyy
 - `npm run build` — build de produção  
 - `npm run preview` — pré-visualização do build  
 
-## Deploy
+## GitHub Pages
 
-Gere o build e publique a pasta `dist` em um host estático (Vercel, Netlify, GitHub Pages etc.).
+Site: **https://maliraa07.github.io/Projeto_Horizon/**
+
+1. No GitHub: **Settings → Pages → Build and deployment**
+2. **Source:** Deploy from a branch
+3. **Branch:** `main` · **Folder:** `/docs` (não use `/ (root)`)
+4. Salve e aguarde 1–2 minutos
+
+O workflow em `.github/workflows/deploy-pages.yml` atualiza a pasta `docs/` automaticamente a cada push no `main`.
 
 ## Observações
 
