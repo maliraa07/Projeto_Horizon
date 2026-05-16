@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Tipografia do app: sans geométrica + serif de destaque (títulos com font-display) */
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces', ui-serif, Georgia, 'Times New Roman', serif;
+  /* Marca verde “dinheiro / crescimento” (mantém nomes horizon-* no código) */
+  --color-horizon-50: #ecfdf5;
+  --color-horizon-100: #d1fae5;
+  --color-horizon-200: #6ee7b7;
+  --color-horizon-500: #10b981;
+  --color-horizon-600: #059669;
+  --color-horizon-900: #064e3b;
+}
+
+@layer base {
+  html {
+    @apply font-sans antialiased;
+    font-size: 17px;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply m-0 min-h-dvh text-slate-900;
+    background-color: #f4faf7;
+    background-image:
+      radial-gradient(ellipse 120% 85% at 50% -25%, rgb(16 185 129 / 0.12), transparent 58%),
+      radial-gradient(ellipse 90% 55% at 100% 0%, rgb(45 212 191 / 0.1), transparent 48%),
+      radial-gradient(ellipse 70% 50% at 0% 100%, rgb(5 150 105 / 0.06), transparent 50%);
+    background-attachment: fixed;
+  }
+  ::selection {
+    @apply bg-horizon-200 text-horizon-900;
+  }
+  h1,
+  h2 {
+    font-family: var(--font-display);
+  }
+}
