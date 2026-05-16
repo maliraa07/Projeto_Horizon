@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+// GitHub Pages: https://maliraa07.github.io/Projeto_Horizon/
+export default defineConfig(({ command }) => ({
   plugins: [react(), tailwindcss()],
-})
+  base: command === 'build' ? '/Projeto_Horizon/' : '/',
+}))
