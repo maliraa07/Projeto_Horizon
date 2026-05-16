@@ -2,6 +2,14 @@
 
 App para **registrar gastos manualmente** e **importar extratos em CSV** do seu banco, com **categorias**, **dashboard** (totais, pizza por tipo, orçamento vs gasto), **comparativo entre meses** e **exportação CSV** — tudo com dados **persistidos no navegador** (`localStorage`), sem backend.
 
+## Acesso online
+
+**Demo publicada:** [https://maliraa07.github.io/Projeto_Horizon/](https://maliraa07.github.io/Projeto_Horizon/)
+
+No login use **qualquer e-mail e senha** — é apenas uma simulação local no navegador.
+
+Repositório: [github.com/maliraa07/Projeto_Horizon](https://github.com/maliraa07/Projeto_Horizon)
+
 ## Stack
 
 - React 19 + TypeScript + Vite 8  
@@ -16,8 +24,7 @@ npm install
 npm run dev
 ```
 
-Abra o endereço exibido no terminal (por padrão `http://localhost:5173`).  
-No login use **qualquer e-mail e senha** — sessão local apenas para simular acesso ao painel.
+Abra o endereço exibido no terminal (por padrão `http://localhost:5173`).
 
 ## Importar extrato
 
@@ -35,16 +42,17 @@ Formatos de data aceitos na importação incluem `dd/MM/yyyy`, `dd/MM/yy` e `yyy
 - `npm run build` — build de produção  
 - `npm run preview` — pré-visualização do build  
 
-## GitHub Pages
+## Deploy (GitHub Pages)
 
-Site: **https://maliraa07.github.io/Projeto_Horizon/**
+Publicação em [https://maliraa07.github.io/Projeto_Horizon/](https://maliraa07.github.io/Projeto_Horizon/)
 
-1. No GitHub: **Settings → Pages → Build and deployment**
-2. **Source:** Deploy from a branch
-3. **Branch:** `main` · **Folder:** `/docs` (não use `/ (root)`)
-4. Salve e aguarde 1–2 minutos
+Configuração no GitHub (**Settings → Pages**):
 
-O workflow em `.github/workflows/deploy-pages.yml` atualiza a pasta `docs/` automaticamente a cada push no `main`.
+- **Source:** Deploy from a branch  
+- **Branch:** `main`  
+- **Folder:** `/docs`
+
+A cada push na `main`, o workflow `.github/workflows/deploy-pages.yml` gera o build e atualiza a pasta `docs/`.
 
 ## Observações
 
