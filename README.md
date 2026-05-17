@@ -46,6 +46,16 @@ Sem cadastro em servidor, sem backend: tudo roda no **navegador** com `localStor
 
 ---
 
+## Outros projetos
+
+| Projeto | Descrição | Demo |
+|---------|-----------|------|
+| **Estudie** | Timer de foco estilo Pomodoro (HTML, CSS, JavaScript) | [Abrir demo](https://maliraa07.github.io/Projeto_Estudie/) |
+| **GameStore** | E-commerce gamer para PC e console (HTML, CSS, JavaScript) | [Abrir demo](https://maliraa07.github.io/Projeto_GamesStore/) |
+| **Portfólio** | Site profissional com tema claro/escuro e seções completas | [Abrir site](https://maliraa07.github.io/MeuPortifolio_/) |
+
+---
+
 ## Stack
 
 | Camada | Tecnologias |
